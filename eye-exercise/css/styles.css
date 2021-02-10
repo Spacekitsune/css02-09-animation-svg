@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: #f3d8e5;
+}
+
+.eye {
+  width: 245px;
+}
+
+#eye {
+  animation: move 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+
+  30% {
+      transform: translatex(-15px);
+  }
+
+  50% {
+      transform: translate(6px, 6px);
+  }
+
+  100% {
+      transform: translateY(-9px) translateX(-12px) scale(1.2)
+  }
+
+}

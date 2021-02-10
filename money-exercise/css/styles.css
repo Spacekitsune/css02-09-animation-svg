@@ -1,0 +1,32 @@
+#hand-2 {
+  width: 600px;
+  margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#money-front-left {
+  animation: move1 1s infinite;
+  animation-direction: alternate;
+}
+
+#money-front-right {
+  animation: move2 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move2 {
+
+  100% {
+    transform: translate(30px, -30px);
+  }
+
+}
+
+@keyframes move1 {
+
+  100% {
+    transform: translateY(-30px);
+  }
+
+}
